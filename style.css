@@ -1,0 +1,51 @@
+:root{
+    --claro: #FFFFFF;
+    --oscuro: #000;
+    --primary: #10CEE1;
+}
+/* 1 rem = 10px*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--oscuro);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.second-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--oscuro);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.container{
+    width: 100rem;
+    margin: 0 auto 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--primary);
+}
+
+.nav-i{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-i a{
+    color: var(--claro);
+    text-decoration: none;
+}
