@@ -19,6 +19,17 @@ body{
     background-image: linear-gradient(to top, #dfe9f3 0%, var(--claro) 100%); /*Degrades en todo la web*/
 }
 
+/*Sombra*/
+.shadow{
+    -webkit-box-shadow: 0px 15px 15px 0px rgba(128,126,128,0.54);
+    -moz-box-shadow: 0px 15px 15px 0px rgba(128,126,128,0.54);
+    box-shadow: 0px 15px 15px 0px rgba(128,126,128,0.54);
+    background-color: var(--claro);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+
 /* Tipografia */
 
 h1{
@@ -79,11 +90,12 @@ h1, h2, h3{
 
 /*Codigo css de la portada principal*/
 .img-bg{
-    background-image: url(img/portada.jpg);
+    background-image: url(../img/portada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .container-portada{
@@ -111,4 +123,12 @@ h1, h2, h3{
 header{
     padding-bottom: 2rem;
     padding-top: 2rem;
+}
+
+/*Servicios*/
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
