@@ -1,7 +1,8 @@
 :root{
     --claro: #FFFFFF;
-    --oscuro: #000;
-    --primary: #10CEE1;
+    --hover: #8E8EAD;
+    --primary: #2877B1;
+    --secundary: #25769E;
 }
 
 html{
@@ -74,7 +75,7 @@ h1, h2, h3{
 }
 
 .nav-i a:hover{
-    background-color: #000;
+    background-color: var(--secundary);
 }
 
 @media (min-width:480px){
@@ -130,5 +131,101 @@ header{
     .servicios{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
     }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    font-weight: normal;
+    color: var(--secundary)
+}
+
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/*Formularios*/
+
+.formulario{
+    background-color: var(--hover);
+    width: min( 60rem, 100% );     /*Utilizar e valor mas pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+} 
+
+.formulario fieldset{
+    border: none;
+}
+
+.contnedor-campos{
+
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--claro);
+    font-weight: normal;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo input, 
+.campo textarea{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.campo textarea{
+    height: 15rem;
+}
+
+/*Boton submit*/
+.boton{
+    background-color: var(--secundary);
+    color: var(--claro);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: auto;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+/*Utilidades*/
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
 }
