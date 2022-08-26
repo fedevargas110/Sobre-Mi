@@ -17,10 +17,9 @@
     </header>
     <div class="nav-bg">
         <nav class="nav-i container">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre MI</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+            <a href="index.html">Inicio</a>
+            <a href="#ser">Sobre MI</a>
+            <a href="#fo">Contactar</a>
         </nav>
     </div>
 
@@ -34,7 +33,7 @@
             </p>
         </div>
     </section>
-    <main class="container shadow">
+    <main id="ser" class="container shadow">
         <h2>Mis Servicios</h2>
         <div class="servicios">
             <section class="servicio">
@@ -47,7 +46,8 @@
                         <line x1="8" y1="4" x2="8" y2="8" />
                       </svg>
                 </div>
-                <p>texto de tarjeta 1.</p>
+                <p>Programo utilizando los lenguages de Html, Css y JS para poder lograr
+                    paginas web que se adapten al cliente y sean a su ves amigables. </p>
             </section>
         
             <section class="servicio">
@@ -61,19 +61,23 @@
                         <path d="M16 16l-2.51 -4.518m-1.487 -2.677l-1.003 -1.805" />
                       </svg>
                 </div>
-                <p>texto de tarjeta 1.</p>
+                <p>Todavia, no estoy familiarizado con las tecnologias que desarrollan en aplicaciones web (Mobile)</p>
             </section>
         </div>
     
     <section>
         <h2>Contacto</h2>
 
-        <form class="formulario">
+        <form enctype="text/plain" action="mailto: fedevargas110@gmail.com" method="post" id="fo" class="formulario">
             <fieldset>
                 <div class="contenedor-campos">
                     <div class="campo">
                         <label>Nombre: </label>
-                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Nombre Completo">
+                    </div>
+                    <div class="campo">
+                        <label>Telefono: </label>
+                        <input type="tel" placeholder="Telefono">
                     </div>
                     <div class="campo">
                         <label>E-Mail: </label>
@@ -92,7 +96,7 @@
     </section>
     </main>
     
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados - Federico Vargas 2022</p>
     </footer>
     
